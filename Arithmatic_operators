@@ -1,0 +1,22 @@
+// Arithmatic operators
+module Ar_opratrs;
+  reg[3:0] i1,i2,i3,i4;
+  initial begin
+    i1 = 4'd6;
+    i2 = 4'd3;
+    
+    $display("i1=%0d and i2=%0d",i1,i2);
+    $display("Add=%0d",i1+i2);
+    $display("Sub=%0d",i1-i2);
+    $display("Mul=%0d",i1*i2);
+    $display("div=%0d",i1/i2);
+    $display("pow=%0d",i1 ** 3);
+    $display("Mod=%0d",i1 % i2);
+    
+    i3 = 4'd5;
+    i4 = 4'd2;
+    
+    $display("\ni3=%0d and i4=%0d",i3,i4);
+    $display("Mod: %0d",i3 % i4);
+  end
+endmodule
